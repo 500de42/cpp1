@@ -1,3 +1,5 @@
+#ifndef ZOMBIE_HPP
+#define ZOMBIE_HPP
 #include <iostream>
 
 class   Zombie
@@ -5,22 +7,12 @@ class   Zombie
     private :
         std::string name;
     public :
-        void announce(void)
-            {
-                std::cout << name << ": BraiiiiiiinnnzzzZ..." << std::endl;
-            }
-        Zombie(std::string s)
-        {
-            this->name = s;
-            return ;
-        }
-        ~Zombie()
-        {
-            std::cout << name << "has been destroyed" << std::endl;
-            return ;
-        }
-
+        void announce(void);
+        Zombie(std::string s);
+        ~Zombie();
 };
 
 Zombie* newZombie(std::string name);
 void randomChump(std::string name);
+
+#endif

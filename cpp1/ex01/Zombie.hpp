@@ -5,25 +5,10 @@ class   Zombie
     private :
         std::string name;
     public :
-        void announce(void)
-        {
-            std::cout << name << ": BraiiiiiiinnnzzzZ..." << std::endl;
-        }
-        void set_name(std::string s)
-        {
-            this->name = s;
-        }
-        Zombie()
-        {
-            std::cout <<"Zombie has been create" << std::endl;
-            return ;
-        }
-        ~Zombie()
-        {
-            std::cout << name << ": has been destroyed" << std::endl;
-            return ;
-        }
-
+        void announce(void);
+        void set_name(std::string s);
+        Zombie();
+        ~Zombie();
 };
 
 Zombie* zombieHorde(int N, std::string name);
