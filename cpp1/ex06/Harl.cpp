@@ -10,7 +10,7 @@ void Harl::info(void)
 }
 void Harl::warning(void)
 {
-    std::cout << "[ WARNING ]\nI think I deserve to have some extra bacon for free. I’ve been coming for years, whereas you started working here just last month." << std::endl << std::endl;
+    std::cout << "[ WARNING ]\nI think I deserve to have some extra bacon for free." << std::endl << "I’ve been coming for years, whereas you started working here just last month." << std::endl << std::endl;
 }
 void Harl::error(void)
 {
@@ -28,11 +28,6 @@ void Harl::complain(std::string level)
            break;
     switch(i)
     {
-        case 4:
-        {
-            std::cout << "[ Probably complaining about insignificant problems ]\n\n";
-            break ;
-        }
         case 0:
         {
             (this->*tab[0])();

@@ -8,19 +8,9 @@ class Weapon
     private :
         std::string type;
     public : 
-        std::string getType()
-        {
-            return this->type;
-        }
-        Weapon(std::string S)
-        {
-            this->type = S;
-            return ;
-        }
-        void setType(std::string newType)
-        {
-            this->type = newType;
-        }
+        const std::string getType();
+        Weapon(std::string S);
+        void setType(std::string newType);
 };
 
 #endif

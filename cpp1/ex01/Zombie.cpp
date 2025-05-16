@@ -1,9 +1,9 @@
 #include "Zombie.hpp"
 
 void Zombie::announce(void)
-(
-    std::cout << name << ": BraiiiiiiinnnzzzZ..." << std::endl;
-)
+{
+    std::cout << this->name << ": BraiiiiiiinnnzzzZ..." << std::endl;
+}
 
 void Zombie::set_name(std::string s)
 {
@@ -31,7 +31,6 @@ Zombie* zombieHorde(int N, std::string name)
     while (i++ < N - 1)
     {
         zombiehorde[i].set_name(name);
-        zombiehorde[i].announce();
     }
     return (zombiehorde);
 }
